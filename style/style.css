@@ -1,0 +1,170 @@
+
+    .attribution {position: absolute; bottom: 0px; font-size: 11px; text-align: center; width: 100vw;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+        height: 100vh;
+        background-color: #0c122c;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-family: 'MuseoModerno', cursive;
+    }
+
+    .container {
+        height: 50vh;
+        width: 100vw;
+        position: fixed;
+        background: url("../images/bg-desktop.svg") no-repeat;
+        background-size: cover;
+        bottom: 0px;
+        z-index: -999;
+    }
+
+    .boxes {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .first-box {
+        display: flex;
+        width: 180px;
+        height: 130px;
+        background-color: #1e2c69;
+        align-items: center;
+        margin-right: 1.4em;
+        border-radius: 5% 40% 5% 5%;
+        padding-left: 30px;
+    }
+
+    .logo img {
+        width: 4em;
+    }
+
+    .first-box-content {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .first-box-content .icons div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.5em;
+        height: 1.5em;
+        background-color: #0c122c;
+        border-radius: 3px;
+        margin-right: .4em;
+    }
+
+    .first-box-content .icons img {
+        width: 13px;
+        height: 13px;
+    }
+
+    .first-box-content .icons {
+        display: flex;
+    }
+    
+    .second-box {
+        display: flex;
+        position: relative;
+        width: 300px;
+        height: 100px;
+        background-color: #1e2c69;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: 1.5em;
+        border-radius: 10px;
+    }
+
+    .second-box .second-box-content {
+        width: 85%;
+    }
+
+    .second-box .second-box-content span {
+        font-size: 6px;
+    }
+
+    .used-capacity {
+        font-size: small !important;
+    }
+
+    .start-end {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .progress-bar {
+        display: flex;
+        height: 7px;
+        position: relative;
+        background: #0c122c;
+        -moz-border-radius: 1.2em;
+        -webkit-border-radius: 1.2em;
+        border-radius: 1.2em;
+        padding: 3px;
+        box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+        margin-top: 1.1em;
+    }
+
+    .progress-bar > span:first-child {
+        display: block;
+        height: 100%;
+        width: 75%;
+        position: relative;
+        overflow: hidden;
+        background-color: rgb(43, 194, 83);
+        border-radius: 20px;
+        background-image: linear-gradient(#f8a09d, #f84d8f);
+        box-shadow: 
+        inset 0 2px 9px rgba(255, 255, 255, 0.3);
+        inset: 0 -2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .point {
+        background-color: #fff;
+        position: absolute;
+        width: 3%;
+        height: 100%;
+        border-radius: 50%;
+        right: 0;
+    }
+
+    .tooltip {
+        display: flex;
+        position: absolute;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center; 
+        font-size: x-small;
+        color: #0c122c;
+        width: 85px;
+        height: 35px;
+        top: -10%;
+        right: 10%;
+        border-width: 5px;
+        border-radius: 5px;
+    }
+
+    .tooltip::after {
+        content: "";
+        position: absolute;
+        top: 90%;
+        right: 0;
+        border-style: solid;
+        border-width: 10px;
+        border-radius: 10%;
+        border-color: #fff #fff transparent transparent;
+    }
+
+    .tooltip span {
+        font-size: large;
+    }
